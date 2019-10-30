@@ -1,15 +1,9 @@
-﻿#include <stdio.h>
-int main()
-{
-	int a;
-aaa:
-	scanf("%c", &a);
-	if (a != 'q', a != ' ')
-	{
+﻿#include<stdio.h>
+int main() {
+	char a;
+	while (a != 'q') {
+		scanf_s(" %c", &a);
 		printf("%c\n", a);
-		goto aaa;
 	}
-	else goto bbb;
-bbb: if (a == 'q') printf("q");
-	if (a == ' ') goto aaa;
+	return 0;
 }
